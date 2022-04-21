@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  //1.使用setTimeout
+  //setTimeout(() => {
+   // console.log('hello')
+     // },1000)
+  //2.使用promise封装
+new Promise((resolve,reject) => {
+  setTimeout(() =>{
+    //resolve('hello')
+    reject('error message')
+  },1000)
+}).then(data =>{
+  //100行处理代码
+  console.log(data)
+}).catch(err =>{
+  console.log(err);
+})
+</script>
+</body>
+</html>

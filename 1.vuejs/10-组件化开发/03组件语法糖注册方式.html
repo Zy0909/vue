@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+ <cnp1></cnp1>
+  <cnp2></cnp2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  Vue.component('cnp1',{
+    template:`
+    <div>
+    <h2>我是标题</h2>
+    <p>我是内容</p>
+</div>`
+  })
+  const app = new Vue({
+    el:'#app',
+    data:{
+      message:'你好'
+    },
+    components:{
+      cnp2:{
+        template:`
+        <div>
+        <h2>我是标题啊</h2>
+        <p>我是内容啊</p>
+</div>`
+      }
+    }
+  })
+</script>
+</body>
+</html>

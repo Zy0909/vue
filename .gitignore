@@ -1,0 +1,7 @@
+# Project exclude paths
+/2.webpack/02-webpack的配置/node_modules/
+/2.webpack/03-webpack的loader/node_modules/
+/2.webpack/04-webpack的vue/node_modules/
+/2.webpack/05-webpack的plugin/node_modules/
+/2.webpack/06-webpack配置的分离/node_modules/
+/node_modules/

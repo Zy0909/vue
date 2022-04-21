@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TerminalProjectOptionsProvider">
+    <envs>
+      <env key="PATH" value="D:\nodejs\node_global" />
+      <env key="NODE_HOME" value="NODE_HOME=D:\nodejs\node_global\node_modules" />
+      <env key="Path" value="Path=&quot;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin\;C:\Program Files\Java\jdk1.7.0_80\bin&quot;\;C:\windows\system32\;C:\windows\;C:\windows\system32\wbem\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin\;D:\nodejs\node_global\;D:\360Downloads\Git\cmd\;D:\360Downloads\Git\bin\;D:\360Downloads\Git\mingw64\libexec\git-core\;D:\nodejs\\;D:\nodejs\node_global\;D:\360安全浏览器下载\Microsoft VS Code\bin\;C:\Users\Administrator.DESKTOP-1IBV0PG\AppData\Roaming\npm\;" />
+    </envs>
+  </component>
+</project>

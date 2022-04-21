@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <cnp></cnp>
+  <div>
+    <cnp></cnp>
+  </div>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const cnpC=Vue.extend({
+    template:`
+    <div>
+    <h2>我是标题</h2>
+    <p>我是内容</p>
+</div>`})
+    const app = new Vue({
+    el:'#app',
+      components:{
+      cnp:cnpC
+      }
+  })
+</script>
+</body>
+</html>

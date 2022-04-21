@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .active{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+ <ul>
+   <li v-for="(item,index) in movies" :class="{active:currentIndex===index}" @click="getShow(index)">{{index}}-{{item}}</li>
+ </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el:'#app',
+    data:{
+      currentIndex:0,
+      movies:['海贼王','进击的巨人','柯南','你的名字']
+    },
+    methods:{
+      getShow(index){
+        this.currentIndex=index
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

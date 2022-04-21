@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  new Promise((resolve,reject) =>{
+    setTimeout(() =>{
+      resolve('aaa')
+    },1000)
+  }).then(res =>{
+    console.log(res,'第一层处理的10行代码');
+    return res+'111';
+    }).then( res =>{
+      console.log(res,'第二层处理的10行代码');
+      return res+'222';
+      }).then( res =>{
+        console.log(res,'第三层处理的10行代码')
+      })
+</script>
+</body>
+</html>
